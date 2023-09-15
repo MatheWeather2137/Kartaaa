@@ -1,0 +1,320 @@
+body{
+    margin: 0;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50vh 15vh 35vh;
+    grid-template-areas: 
+    "karta_placeholder karta_placeholder"
+    "tytul tytul1"
+    "inputy tla";
+}
+
+#karta_placeholder{
+    grid-area: karta_placeholder;
+    background: radial-gradient(circle at 50% 50%, #9e69ff 0, #7f5ffe 25%, #5656fc 50%, #004efa 75%, #0048f7 100%);
+    background-color: #3050BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px black solid;
+}
+#tytul{
+    grid-area: tytul;
+    background: radial-gradient(circle at 77.3% 50%, #8a63ff 0, #735cfe 25%, #5656fc 50%, #2650fa 75%, #004cf9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    color: #49DA28;
+}
+#tytul1{
+    grid-area: tytul1;
+    background: radial-gradient(circle at 24.34% 59.34%, #8a63ff 0, #735cfe 25%, #5656fc 50%, #2650fa 75%, #004cf9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #49DA28;
+}
+#inputy{
+    grid-area: inputy;
+    background: radial-gradient(circle at 77.3% 50%, #8a63ff 0, #735cfe 25%, #5656fc 50%, #2650fa 75%, #004cf9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#tla{
+    grid-area: tla;
+    background: radial-gradient(circle at 24.34% 59.34%, #8a63ff 0, #735cfe 25%, #5656fc 50%, #2650fa 75%, #004cf9 100%);
+    border-left: 2px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    "title_images title_colors"
+    "images colors";
+}
+#title_images{
+    grid-area: title_images;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    color: aquamarine;
+}
+#title_colors{
+    grid-area: title_colors;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    color: aquamarine;
+}
+#images{
+    grid-area: images;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#colors{
+    grid-area: colors;
+    border-left: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#karta{
+    height: 300px;
+    width: 500px;
+    background-color: #908686;
+    border-radius: 20px;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 25% 15% 25%;
+    grid-template-areas: 
+    "bank_name logo"
+    "numer_karty numer_karty"
+    "data data"
+    "nazwisko nazwisko";
+}
+#bank_name{
+    grid-area: bank_name;
+    font-size: 30px;
+    padding: 10px;
+}
+#logo{
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 6px;
+}
+#numer_karty{
+    grid-area: numer_karty;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+}
+#data{
+    grid-area: data;
+    font-size: larger;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    font-size: 25px;
+    padding: 10px;
+}
+#nazwisko{
+    grid-area: nazwisko;
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+}
+#logoo{
+    height: 50px;
+    width: 50px;
+}
+#papiez1{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#papiez2{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#papiez3{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#papiez4{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#gradient1{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#gradient2{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#gradient3{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#gradient4{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+[type="radio"] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+#numer{
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+}
+#name{
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+}
+#date{
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+}
+.selected-image {
+    border: 3px solid rgb(15, 230, 43);
+    
+}
+#JP2{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+#JP2_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Ben{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+#Ben_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Fran{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+#Fran_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Jan23{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+#Jan23_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Red_Yell{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+}
+#Red_Yell_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#Yell_Pup{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+}
+#Yell_Pup_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Blue_Green{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+}
+#Blue_Green_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Gray_White{
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+}
+#Gray_White_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gradient_text1{
+    background-image: linear-gradient(to right, red, yellow); /* Definiuje gradient */
+    color: transparent; /* Ustawia kolor tekstu na przezroczysty */
+    -webkit-background-clip: text; /* Obsługuje różne przeglądarki */
+    background-clip: text; /* Pozwala gradientowi "przeniknąć" przez tekst */
+}
+.gradient_text2{
+    background-image: linear-gradient(to right,yellow , purple); /* Definiuje gradient */
+    color: transparent; /* Ustawia kolor tekstu na przezroczysty */
+    -webkit-background-clip: text; /* Obsługuje różne przeglądarki */
+    background-clip: text; /* Pozwala gradientowi "przeniknąć" przez tekst */
+}
+.gradient_text3{
+    background-image: linear-gradient(to right, aqua , green); /* Definiuje gradient */
+    color: transparent; /* Ustawia kolor tekstu na przezroczysty */
+    -webkit-background-clip: text; /* Obsługuje różne przeglądarki */
+    background-clip: text; /* Pozwala gradientowi "przeniknąć" przez tekst */
+}
+.gradient_text4{
+    background-image: linear-gradient(to left, white , grey); /* Definiuje gradient */
+    color: transparent; /* Ustawia kolor tekstu na przezroczysty */
+    -webkit-background-clip: text; /* Obsługuje różne przeglądarki */
+    background-clip: text; /* Pozwala gradientowi "przeniknąć" przez tekst */
+}
+

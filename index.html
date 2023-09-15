@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pupa.jpg">
+    <title>Credit Card</title>
+</head>
+<body>
+    <div id="karta_placeholder">
+    <div id="karta">   
+        <div id="bank_name">Millennium</div>
+        <div id="logo"><img src="visalogo.png" id="logoo"></div>
+        <div id="numer_karty"><h1 id="h1"></h1></div>
+        <div id="data"><h1 id="h3"></h1></div>
+        <div id="nazwisko"><h1 id="h2"></h1></div>
+    </div>
+    </div>
+        <div id="tytul">
+            <h1>DATA</h1>
+        </div>
+
+        <div id="tytul1">
+            <h1>BACKGROUNDS</h1>
+        </div>
+
+        <div id="inputy">
+            
+            <input type="text" oninput="numberChange()" id="numer" maxlength="16" placeholder="card number">
+
+            <input type="text" oninput="nameChange()" id="name" placeholder="name and surname">
+
+            <input type= "month" oninput="DateChange()" id="date">
+        </div>
+        <div id="tla">
+            <div id="title_images"><h1>IMAGES</h1></div>
+            <div id="title_colors"><h1>COLORS</h1></div>
+            <div id="images">
+                <div id="JP2_div">
+                    <input type="radio" id="grafika1" name="guzik" onclick="changeGrafika1()" class="radio-button" data-image-id="papiez1">
+                    <label for="grafika1"><img src="papiez1.jpg" name="img" id="papiez1"></label>
+                    <label for="papiez3"><h1 id="JP2">Jan Paweł II</h1></label>
+                </div>
+                <div id="Ben_div">
+                    <input type="radio" id="grafika2" name="guzik" onclick="changeGrafika2()" class="radio-button" data-image-id="papiez2">
+                    <label for="grafika2"><img src="papiez2.jpg" name="img" id="papiez2"></label>
+                    <label for="papiez3"><h1 id="Ben">Benedykt XVI</h1></label>
+                </div>
+                <div id="Fran_div">
+                    <input type="radio" id="grafika3" name="guzik" onclick="changeGrafika3()" class="radio-button" data-image-id="papiez3">
+                    <label for="grafika3"><img src="papiez3.jpg" name="img" id="papiez3"></label>
+                    <label for="papiez3"><h1 id="Fran">Franciszek</h1></label>
+                </div>
+                <div id="Jan23_div">
+                    <input type="radio" onclick="changeGrafika4()" name="guzik" id="gif" class="radio-button" data-image-id="papiez4">
+                    <label for="gif"><img src="papiez4.jpg" name="img" id="papiez4"></label>
+                    <label for="papiez3"><h1 id="Jan23">Jan XXIII</h1></label>
+                </div>
+
+            </div>
+
+            <div id="colors">
+                <div id="Red_Yell_div">
+                    <input type="radio" onclick="changeColor1()" name="img" id="kolor1" class="radio-button" data-image-id="gradient1">
+                    <label for="kolor1"><img src="gradient.jpg" name="zdjecie" id="gradient1"></label>
+                    <label for="gradient1"><h1 id="Red_Yell" class="gradient_text1">Red-Yellow</h1></label>
+                </div>
+                <div id="Yell_Pup_div">
+                    <input type="radio" onclick="changeColor2()" name="img" id="kolor2" class="radio-button" data-image-id="gradient2">
+                    <label for="kolor2"><img src="gradient2.png" name="zdjecie" id="gradient2"></label>
+                    <label for="gradient2"><h1 id="Yell_Pup" class="gradient_text2">Yellow-Purple</h1></label>
+                </div>
+                <div id="Blue_Green_div">    
+                    <input type="radio" onclick="changeColor3()" name="img" id="kolor3" class="radio-button" data-image-id="gradient3">
+                    <label for="kolor3"><img src="gradient3.png" name="zdjecie" id="gradient3"></label>
+                    <label for="gradient3"><h1 id="Blue_Green" class="gradient_text3">Blue-Green</h1></label>
+                </div>
+                <div id="Gray_White_div">    
+                    <input type="radio" onclick="changeColor4()" name="img" id="kolor4" class="radio-button" data-image-id="gradient4">
+                    <label for="kolor4"><img src="gradient4.png" name="zdjecie" id="gradient4"></label>
+                    <label for="gradient4"><h1 id="Gray_White" class="gradient_text4">Gray-White</h1></label>
+                </div>
+            </div>
+            
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
