@@ -12,6 +12,7 @@
     <div id="karta">   
         <div id="bank_name">Millennium</div>
         <div id="logo"><img src="visalogo.png" id="logoo"></div>
+        <div id="chip"><img src="chip.png" id="chipp" alt="chip"></div>
         <div id="numer_karty"><h1 id="h1"></h1></div>
         <div id="data"><h1 id="h3"></h1></div>
         <div id="nazwisko"><h1 id="h2"></h1></div>
@@ -26,7 +27,8 @@
         </div>
 
         <div id="inputy">
-            
+            <button id="xpp" onclick="zarcik()">koty <3</button>
+
             <input type="text" oninput="numberChange()" id="numer" maxlength="16" placeholder="card number">
 
             <input type="text" oninput="nameChange()" id="name" placeholder="name and surname">
@@ -40,12 +42,12 @@
                 <div id="JP2_div">
                     <input type="radio" id="grafika1" name="guzik" onclick="changeGrafika1()" class="radio-button" data-image-id="papiez1">
                     <label for="grafika1"><img src="papiez1.jpg" name="img" id="papiez1"></label>
-                    <label for="papiez3"><h1 id="JP2">Jan Paweł II</h1></label>
+                    <label for="papiez1"><h1 id="JP2">Jan Paweł II</h1></label>
                 </div>
                 <div id="Ben_div">
                     <input type="radio" id="grafika2" name="guzik" onclick="changeGrafika2()" class="radio-button" data-image-id="papiez2">
                     <label for="grafika2"><img src="papiez2.jpg" name="img" id="papiez2"></label>
-                    <label for="papiez3"><h1 id="Ben">Benedykt XVI</h1></label>
+                    <label for="papiez2"><h1 id="Ben">Benedykt XVI</h1></label>
                 </div>
                 <div id="Fran_div">
                     <input type="radio" id="grafika3" name="guzik" onclick="changeGrafika3()" class="radio-button" data-image-id="papiez3">
@@ -53,9 +55,9 @@
                     <label for="papiez3"><h1 id="Fran">Franciszek</h1></label>
                 </div>
                 <div id="Jan23_div">
-                    <input type="radio" onclick="changeGrafika4()" name="guzik" id="gif" class="radio-button" data-image-id="papiez4">
-                    <label for="gif"><img src="papiez4.jpg" name="img" id="papiez4"></label>
-                    <label for="papiez3"><h1 id="Jan23">Jan XXIII</h1></label>
+                    <input type="radio" onclick="changeGrafika4()" name="guzik" id="grafika4" class="radio-button" data-image-id="papiez4">
+                    <label for="grafika4"><img src="papiez4.jpg" name="img" id="papiez4"></label>
+                    <label for="papiez4"><h1 id="Jan23">Jan XXIII</h1></label>
                 </div>
 
             </div>

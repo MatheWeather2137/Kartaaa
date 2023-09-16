@@ -1,4 +1,4 @@
-//zmiana numeru karty
+//obramowanie na klikniety radio button
 const radioButtons = document.querySelectorAll('.radio-button')
 const images = document.querySelectorAll('img')
 
@@ -17,6 +17,7 @@ for (let i = 0; i < radioButtons.length; i++) {
       }
   });
 }
+//zmiana numeru karty
 function numberChange(){
     var a=   document.getElementById("numer").value
     var b = document.getElementById("h1")
@@ -88,8 +89,12 @@ function changeColor4(){
   document.getElementById("karta").style.color = "black"
   document.getElementById("karta").style.fontWeight = "bold"
 }
+function zarcik(){
+  var inna_strona = "http://www.catsthatlooklikehitler.com/cgi-bin/seigmiaow.pl"
+  window.location.href = inna_strona
+}
 
-//efekty 3d do karty
+//animacje 3d do karty
 let el = document.getElementById('karta')
 
 const height = el.clientHeight
